@@ -43,8 +43,9 @@ function menuMaker(itemsArray){
   });
   menu.appendChild(list);
 
-  let menuButton = document.querySelector('.header');
-  menuButton.appendChild(menu);
+  let menuButton = document.querySelector('.menu-button');
+  let header = document.querySelector('.header');
+  header.appendChild(menu);
   menuButton.addEventListener('click', () =>{
     menu.classList.toggle('menu--open');
   });
